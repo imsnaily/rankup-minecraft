@@ -1,0 +1,9 @@
+name: MCRankup
+version: '${project.version}'
+main: com.snailycfx.Rankup
+api-version: '1.21'
+
+author: Snaily
+description: An advanced rankup plugin based on block mining.
+
+softdepend: [PlaceholderAPI]

@@ -1,0 +1,27 @@
+# Maximum rank that can be reached
+max-rank: 100
+# Base blocks required for the first rankup (from 0 to 1, but starts at 1)
+base-blocks: 100
+# Multiplier for exponential increase (1.5 means each rankup requires 1.5 times more)
+multiplier: 1.5
+# Announce rankup in global chat?
+broadcast-rankup: true
+
+# PlaceholderAPI integration
+placeholderapi:
+  enabled: true # Ignored if PAPI is not installed
+
+# Optimizations settings for high-player servers
+optimizations:
+  # Batch size for pending block increments (e.g., save every 10 breaks)
+  batch-size: 10
+  # Flush interval in ticks (20 ticks = 1 second; 0 to disable periodic flush)
+  flush-interval-ticks: 100 # Every 5 seconds
+  # Actionbar throttle delay in milliseconds (0 to send every break)
+  actionbar-throttle-ms: 1000 # Every 1 second
+
+# Messages
+messages:
+  rankup-broadcast: "&e%player% has ranked up to rank %rank%!"
+  rankup-success: "&aCongratulations! You have ranked up to %rank%."
+  progress-actionbar: "&8Progress: [&a%bar%&8] (&a%percent%%&8)"

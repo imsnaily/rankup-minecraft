@@ -22,7 +22,7 @@ An advanced rankup plugin for **PaperMC 1.21** that rewards players for mining b
 
 ## 📦 Installation
 
-1. **Download**: Grab the latest JAR from [Releases](https://github.com/yourusername/rankup-avanzado/releases) or build from source (see below).
+1. **Download**: Grab the latest JAR from [Releases](https://github.com/imsnaily/rankup-minecraft/releases) or build from source (see below).
 2. **Server Setup**: Ensure you're running **PaperMC 1.21** (or compatible Spigot fork).
 3. **Place the JAR**: Drop `MCRankup-1.0.0.jar` into your `plugins/` folder.
 4. **Restart**: Start/restart your server. The plugin will auto-generate `config.yml` and `playerdata.db`.
@@ -32,10 +32,10 @@ An advanced rankup plugin for **PaperMC 1.21** that rewards players for mining b
 
 ## ⚙️ Configuration
 
-Edit `plugins/Advanced RankUp/config.yml` for customization. Here's a sample:
+Edit `plugins/MCRankup/config.yml` for customization. Here's a sample:
 
 ```yaml
-# Advanced RankUp Plugin Configuration
+# MCRankup Plugin Configuration
 
 # Maximum rank that can be reached
 max-rank: 100
@@ -68,3 +68,13 @@ messages:
 placeholderapi:
   enabled: true
 ```
+
+## 🔗 PlaceholderAPI Placeholders
+
+If PlaceholderAPI is installed, use these in other plugins:
+
+| Placeholder | Returns | Example |
+|-------------|---------|---------|
+| `%mcrankup_rank%` | Current rank | `5` |
+| `%mcrankup_blocks%` | Blocks mined towards next rank | `150` |
+| `%mcrankup_progress%` | Progress percentage | `75%` |
